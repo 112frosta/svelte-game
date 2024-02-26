@@ -4,7 +4,7 @@
   $: {
     const winner = calculateWinner(board);
     if (winner) {
-      alert(`Winner: ${winner}`);
+      alert(`Wygrany: ${winner}`);
       board = Array(9).fill(null);
     }
   }
@@ -42,7 +42,7 @@
     }
 
     if (squares.every((cell) => cell !== null)) {
-      alert("Draw");
+      alert("Remis");
       board = Array(9).fill(null);
     }
 
